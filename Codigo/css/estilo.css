@@ -1,0 +1,746 @@
+.registro{
+	float: right;
+}
+label {
+	font-weight: bold;
+}
+/* Estilos para la validacion*/
+	.grupo_incorrecto, .label_incorrecto{
+		color: #bb2929;
+	}
+	.grupo_correcto, .label_correcto{
+		color: #1ed12d;
+	}
+
+	.mensaje_error, .mensaje_exito_boton, .mensaje_error_boton{
+		display: none;
+	}
+	.mensaje_error_visible{
+		display: block;
+	}
+	.errores{
+		-webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		background: red;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		color: #fff;
+		display: none;
+		font-size: 14px;
+		margin-top: -50px;
+		margin-left: 250px;
+		padding: 10px;
+		position: absolute;
+	}
+/*---------------------------*/
+/* Estilos para los inputs, botones y enlaces*/
+	.inputs{
+		background: #fff;
+		border: 1px solid;
+	}
+	.enlace{
+		float: right;
+	}
+	a{
+		color:rgba(255,255,255,.55);
+	}
+	a:hover {
+		font-size:20px;
+		color:rgb(189, 209, 226);
+	}
+	.boton{
+		background-color: #57DAE1 ;
+	}
+/*---------------------------*/
+/* Estilos para centrar*/
+	.centrar{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 70vh;
+	}
+	#centrado{
+		vertical-align:middle; 
+		text-align:center;
+	}
+/*---------------------------*/
+/* Estilos para la descripcion de los productos las paginas de administracion*/
+#columna{
+	overflow: auto;
+	width: 200px;
+	height: 200px; /*establece la altura máxima, lo que no entre quedará por debajo y saldra la barra de scroll*/
+}
+/*---------------------------*/
+/* Estilos para la pagina de agradecimiento*/
+.jumbotron {
+	padding: 4rem 2rem;
+	margin-bottom: 2rem;
+	background-color: #e9ecef;
+	border-radius: .3rem;
+}
+/*---------------------------*/
+/* Estilos para la pagina principal, login y registro*/
+	.panelPrincipal{
+		background-color: rgb(235, 235, 235);
+		height: 60%;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.slide-cont{
+		min-height: 280px;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+	.contenedorLogin{
+		width: 20%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		margin: 20px;
+		margin-left: 40px;
+	}
+	.contenedorRegistro{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.panelLogin{
+		background-color: rgb(235, 235, 235);
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.caja1{
+		width: 350px;
+		float: left;
+	}
+	.caja2{
+		width: 350px;
+		float: left;
+	}
+	.contenedorInterior{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.panelRegistro{
+		background-color: rgb(235, 235, 235);
+		width: 80%;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.enlacesLogin{
+		height: 120px;
+	}
+	.enlacesRegistro{
+		width: 100%;
+		height: 120px;
+	}
+	#backgroundLink{
+		position: absolute;
+		background-attachment: fixed;
+    	background-size: cover;
+		height: 100%;
+		width: 100% ;
+	}
+/*---------------------------*/
+/* Estilos para la pagina de modificar Perfil*/
+	.fotoPerfil{
+		width:220px; 
+		height:220px;
+		border-radius: 100px;
+		margin-top:10px;
+	}
+	.imagen{
+		border-radius: 10px;
+		width:600px;
+		height:540px;
+	}
+/*---------------------------*/
+/* Estilos para el catalogo de los videojuegos y consolas*/
+	.contenedor{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.panel{
+		background-color: rgb(235, 235, 235);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.buscador{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.filtroPlataformas{
+		overflow: auto;
+		width: 200px;
+		height: 70px;
+	}
+	.item{
+		width: 183px;
+		height: 280px;
+		margin: 8px;
+		position: relative;
+	}
+	.logo{
+		width: 40px;
+		height: 30px;
+	}
+	.imagenCatalogo{
+		border-radius: 10px;
+		width: 183px;
+		height: 255px;
+	}
+	.shadow{
+		width: 183px;
+		height: 127.5px;
+		bottom: 28px;
+		position: absolute;
+	}
+	.badgeCatalogo{
+		top: 7px;
+		left: 0;
+		right: 125px;
+		bottom: 0;
+		margin: auto;
+		position: absolute;
+	}
+	.precio{
+		padding-top: 85px;
+		margin-right: 10px;
+		font-weight: bold;
+		color: white;
+		text-align: right;
+		font-size: 27px;
+		-webkit-text-stroke-width: 1.2px;
+		-webkit-text-stroke-color: black;
+	}
+	.nombre{
+		color: black;
+		font-size: large;
+		text-align: center;
+	}
+/*---------------------------*/
+/* Estilos para los detalles de los videojuegos y consolas*/
+	.contenedorDetalles{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.panelDetalles{
+		background-color: rgb(235, 235, 235);
+		width: 80%;
+		height: 60%;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	.producto{
+		width: 100%;
+		height: 380px;
+	}
+	.caratula{
+		width: 40%;
+		float: left;
+	}
+	.detalles{
+		width: 40%;
+		height: 270px;
+		float: left;
+	}
+	.imagenDetalles{
+		width: 100%;
+		border-radius: 10px;
+	}
+	.badgeDetalles{
+		width: 50px;
+	}
+	.subInfo{
+		background-color: rgb(189, 209, 226);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.compañia{
+		width:50%;
+	}
+	.fecha{
+		height:25%;
+		width:25%;
+	}
+	.titulo{
+		background-color: rgb(146, 177, 223);
+		width: 100%;
+		height: 50%;
+		color: black;
+		font-weight: bold;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		text-align: center;
+		padding-top: 7px;
+	}
+	.footer{
+		background-color: rgb(146, 177, 223);
+		width: 100%;
+		height: 45%;
+		color: black;
+		font-weight: bold;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		text-align: center;
+	}
+	.precioDetalles{
+		float: left;
+	}
+	.carrito{
+		background-color: #57DAE1  ;
+		float: right;
+	}
+	.fa-check{
+		color: #1ed12d;
+	}
+	.fa-times{
+		color: red;
+	}
+	.descripcion{
+		border-radius: 10px;
+		padding: 10px;
+		background-color: white;
+	}
+	#columnaDetalles{
+		overflow: auto;
+		width: 100%;
+		height: 200px; /*establece la altura máxima, lo que no entre quedará por debajo y saldra la barra de scroll*/
+	}
+/*---------------------------*/
+/* Media Queries */
+	@media only screen and (max-width: 360px){
+		.panelPrincipal{
+			width: 90%;
+		}
+		.panelDetalles{
+			background-color: rgb(235, 235, 235);
+			width: 100%;
+			height: 60%;
+			padding: 20px;
+			border-radius: 10px;
+		}
+		.producto{
+			height: 547px;
+			margin-bottom: 20px;
+		}
+		.caratula{
+			margin-left: 52px;
+			width: 60%;
+		}
+		.imagen{
+			width: 100%;
+			height: 230px;
+		}
+		.imagenDetalles{
+			width: 153.59px;
+			height: 216.56px;
+			border-radius: 10px;
+		}
+		.subInfo{
+			background-color: rgb(189, 209, 226);
+			display: block;
+			text-align: center;
+		}
+		.badgeDetalles{
+			padding-top: 5px;
+		}
+		.detalles{
+			padding-top: 20px;
+			width: 100%;
+			height: 330px;
+		}
+		.compañia{
+			height:25%;
+			width:100%;
+		}
+		.fecha{
+			height:25%;
+			width:100%;
+			padding-bottom: 20px;
+		}
+		.precioDetalles{
+			font-size: 26px;
+			margin-top: 7px;
+			margin-left: 40px;
+		}
+		.carrito{
+			margin-top: 7px;
+			margin-right: 30px;
+		}
+		.footer{
+			height: 19%;
+		}
+		.errores{
+			margin-left: 160px;
+		}
+		#backgroundLink{
+			height: 100%;
+		}
+	}
+	@media only screen and (min-width: 361px){
+		.contenedorLogin{
+			margin-left: 70px;
+		}
+		.panelPrincipal{
+			width: 90%;
+		}
+		.panelDetalles{
+			background-color: rgb(235, 235, 235);
+			width: 100%;
+			height: 60%;
+			padding: 20px;
+			border-radius: 10px;
+		}
+		.producto{
+			height: 555px;
+			margin-bottom: 20px;
+		}
+		.caratula{
+			margin-left: 62px;
+			width: 60%;
+		}
+		.imagen{
+			width: 100%;
+			height: 230px;
+		}
+		.imagenDetalles{
+			width: 100%;
+			height: 263.09px;
+			border-radius: 10px;
+		}
+		.subInfo{
+			background-color: rgb(189, 209, 226);
+			display: block;
+			text-align: center;
+		}
+		.badgeDetalles{
+			padding-top: 5px;
+		}
+		.detalles{
+			padding-top: 20px;
+			width: 100%;
+			height: 293px;
+		}
+		.compañia{
+			height:25%;
+			width:100%;
+		}
+		.fecha{
+			height:25%;
+			width:100%;
+			padding-bottom: 10px;
+		}
+		.precioDetalles{
+			font-size: 29px;
+			margin-top: 8px;
+			margin-left: 60px;
+		}
+		.carrito{
+			margin-top: 10px;
+			margin-right: 50px;
+		}
+		.footer{
+			height: 20%;
+		}
+		.errores{
+			margin-left: 180px;
+		}
+		#backgroundLink{
+			height: 200%;
+		}
+	}
+	@media only screen and (min-width: 420px){
+		.contenedorLogin{
+			margin-left: 90px;
+		}
+		.caratula{
+			margin-left: 75px;
+		}
+		.imagen{
+			width: 100%;
+			height: 230px;
+		}
+		.producto{
+			height: 567px;
+		}
+		.precioDetalles{
+			font-size: 40px;
+			margin-top: 4px;
+			margin-left: 70px;
+		}
+		.detalles{
+			height: 303px;
+		}
+		.carrito{
+			margin-top: 15px;
+			margin-right: 60px;
+		}
+		.footer{
+			height: 23%;
+		}
+		.errores{
+			margin-left: 180px;
+		}
+		#backgroundLink{
+			height: 300%;
+		}
+	}
+	@media only screen and (min-width: 500px){
+		.datos{
+			margin-right: 5%;
+		}
+		#backgroundLink{
+			height: 160%;
+		}
+	}
+	@media only screen and (min-width: 550px){
+		.datos{
+			margin-right: 8%;
+		}
+	}
+	@media only screen and (min-width: 700px){
+		.contenedorLogin{
+			margin-left: 36%;
+			margin-top: 60px;
+		}
+		.panelPrincipal{
+			width: 60%;
+		}
+		.caratula{
+			margin-left: 185px;
+			width: 40%;
+		}
+		.imagen{
+			width: 100%;
+			height: 230px;
+		}
+		.datos{
+			margin-right: 8%;
+		}
+		.producto{
+			height: 564px;
+		}
+		.detalles{
+			padding-left: 60px;
+			padding-right: 60px;
+			height: 302px;
+		}
+		.precioDetalles{
+			margin-left: 120px;
+		}
+		.carrito{
+			width: 150px;
+			margin-top: 15px;
+			margin-right: 110px;
+		}
+		.errores{
+			margin-left: 200px;
+		}
+	}
+	@media only screen and (min-width: 767px){
+		.datos{
+			margin-right: 19%;
+		}
+		#backgroundLink{
+			height: 120%;
+		}
+	}
+	@media only screen and (min-width: 990px){
+		.datos{
+			margin-right: 25%;
+		}
+		#backgroundLink{
+			height: 100%;
+		}
+	}
+	@media only screen and (min-width: 1024px){
+		.contenedorLogin{
+			margin-left: 40%;
+		}
+		.panelPrincipal{
+			width: 50%;
+		}
+		.producto{
+			height: 379px;
+		}
+		.caratula{
+			float: left;
+			margin-left: 0px;
+			width: 30%;
+		}
+		.imagen{
+			width: 100%;
+			height:230px;
+		}
+		.datos{
+			margin-right: 15%;
+		}
+		.contenedorFila{
+			width:100%;
+			height:62px;
+		}
+		.contenedorFilaRegistro{
+			width:100%;
+			height:402px;
+		}
+		.fila{
+			float: left;
+		}
+		.imagenDetalles{
+			height: 379px;
+		}
+		.detalles{
+			margin-right: 10px;
+			float: right;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 0px;
+			width: 65%;
+			height: 298px;
+		}
+		.precioDetalles{
+			margin-top: 2px;
+			font-size: 50px;
+			margin-left: 130px;
+		}
+		.carrito{
+			width: 200px;
+			margin-top: 25px;
+			margin-right: 90px;
+		}
+		.footer{
+			height: 27%;
+		}
+		.errores{
+			margin-left: 210px;
+		}
+	}
+	@media only screen and (min-width: 1200px){
+		.datos{
+			margin-right: 20%;
+		}
+	}
+	@media only screen and (min-width: 1400px){
+		.contenedorLogin{
+			margin-left: 42%;
+		}
+		.panelPrincipal{
+			width: 45%;
+		}
+		.producto{
+			height: 442.73px;
+		}
+		.caratula{
+			float: left;
+			margin-left: 0px;
+			width: 25%;
+		}
+		.imagen{
+			width:550px;
+			height:540px;
+		}
+		.datos{
+			margin-right: 50px;
+		}
+		.fotoPerfil{
+			margin-top:160px;
+		}
+		.imagenDetalles{
+			height: 442.72px;
+		}
+		.detalles{
+			margin-right: 55px;
+			float: right;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 0px;
+			width: 65%;
+			height: 298px;
+		}
+		.precioDetalles{
+			margin-top: 2px;
+			font-size: 50px;
+			margin-left: 190px;
+		}
+		.carrito{
+			width: 250px;
+			height: 50px;
+			margin-top: 15px;
+			margin-right: 130px;
+			padding-top: 10px;
+		}
+		.footer{
+			height: 27%;
+		}
+		.errores{
+			margin-left: 260px;
+		}
+	}
+	@media only screen and (min-width: 2000px){
+		.contenedorLogin{
+			margin-left: 46.5%;
+			margin-top: 120px;
+		}
+		.producto{
+			height: 442.73px;
+		}
+		.caratula{
+			float: left;
+			margin-left: 0px;
+			width: 25%;
+		}
+		.imagen{
+			width:550px;
+			height:540px;
+		}
+		.fotoPerfil{
+			margin-top:160px;
+		}
+		.detalles{
+			margin-right: 55px;
+			float: right;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 0px;
+			width: 65%;
+			height: 298px;
+		}
+		.precioDetalles{
+			margin-top: 2px;
+			font-size: 50px;
+			margin-left: 190px;
+		}
+		.carrito{
+			width: 250px;
+			height: 50px;
+			margin-top: 15px;
+			margin-right: 130px;
+			padding-top: 10px;
+		}
+		.footer{
+			height: 27%;
+		}
+		.errores{
+			margin-left: 360px;
+		}
+	}
+/*---------------------------*/
