@@ -104,7 +104,7 @@
           <!-- Imagen -->
           <div class="form-group" id="grupo_imagen">
             <label for="imagen" class="label">Imagen</label><br>
-            <input class="form-control" type="file" name="imagen" required>
+            <input class="form-control" type="file" name="imagen">
           </div>
           <div class="enlacesRegistro">
             <br>
