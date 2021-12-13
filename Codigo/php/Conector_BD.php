@@ -18,7 +18,7 @@
 		//Variable que almacena el esquema de la BD
 		$BD="tienda_online";
 
-		$conectar=mysqli_connect($servidor,$usuario,$contraseña,$BD,3306);
+		$conectar=mysqli_connect($servidor,$usuario,$contraseña,$BD);
 
 
 		if ($conectar) {
