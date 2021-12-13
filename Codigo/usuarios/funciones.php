@@ -19,7 +19,7 @@ if($_POST['accion'] === 'Registrar'){
     $nacimiento=$_POST['fN'];
     $dni=$_POST['dni'];
     $telefono=$_POST['telefono'];
-    $email=$_POST['email'];
+    $email=$_POST['correo'];
     $cp=$_POST['cp'];
     $provincia=$_POST['provincia'];
     $comunidadAutonoma=$_POST['comunidad'];
