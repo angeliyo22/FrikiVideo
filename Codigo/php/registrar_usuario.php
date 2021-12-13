@@ -34,6 +34,6 @@
 	if($consulta){
 		header('Location: ../home/login.php');
 		}else {
-		header('Location: ../home/registro.html');
+		header('Location: ../home/registro.php');
 	}
  ?>
