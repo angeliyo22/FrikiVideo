@@ -11,7 +11,7 @@ const expresionesRegistroAdminUsuario = {
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^[0-9]{9}/,
 	cp: /^(?:0[1-9]|[1-4]\d|5[0-2])\d{3}$/,
-	direccion: /^[a-zA-ZÀ-ÿ0-9\s]{5,100}$/,
+	direccion: /^[a-zA-ZÀ-ÿ\s?\-]{5,100}$/,
     rol: /[A-Za-z]{4,30}/
 }
 
