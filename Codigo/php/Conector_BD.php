@@ -10,10 +10,10 @@
 		}
 
 		//Variable que almacena el usuario que se conecta a mi Gestor de BD
-		$usuario="debianBD";
+		$usuario="debianDB";
 
 		//Variable que almacena la contraseña del usuario que se conecta a mi Gestor de BD
-		$contraseña="debianBD";
+		$contraseña="debianDB";
 
 		//Variable que almacena el esquema de la BD
 		$BD="tienda_online";
