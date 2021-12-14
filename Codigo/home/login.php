@@ -11,7 +11,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100" style="background: url(../imagenes/fondos/fondo1.png);">
 	<!-- Navbar -->
-	<nav class="navbar navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container">
     		<a class="navbar-brand" href="home.php"><img src="../imagenes/logos/logo.png" alt="logo" width="60px"></a>
     	</div>
